@@ -5,7 +5,7 @@ config:
       branch: master
       repo: https://code-repo.d4science.org/MaDgIK/uoa-repository-manager-ui.git
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.9
+      branch: main
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       code-repo.d4science.org/MaDgIK/uoa-repository-manager-ui git:
         commands:
-        - /usr/bin/env sh .sqa/script.scaly-lemon-jaguar.sh
-        container: qc.acc_messy-malachite-budgerigar
+        - /usr/bin/env sh .sqa/script.baggy-crimson-seal.sh
+        container: qc.acc_droopy-firebrick-goat
   QC.Doc:
     repos:
       code-repo.d4science.org/MaDgIK/uoa-repository-manager-ui find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.beady-gamboge-uguisu.sh
-        container: qc.doc_pokey-copper-coyote
+        - /usr/bin/env sh .sqa/script.messy-cornflower-impala.sh
+        container: qc.doc_nippy-orchid-dolphin
       code-repo.d4science.org/MaDgIK/uoa-repository-manager-ui git:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-violet-grasshopper.sh
-        container: qc.doc_homey-heliotrope-gharial
+        - /usr/bin/env sh .sqa/script.grumpy-linen-crab.sh
+        container: qc.doc_lousy-brass-crab
       code-repo.d4science.org/MaDgIK/uoa-repository-manager-ui markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.stinky-denim-kingfisher.sh
-        container: qc.doc_goopy-ultramarine-goat
+        - /usr/bin/env sh .sqa/script.messy-champagne-anteater.sh
+        container: qc.doc_snappy-sepia-chicken
   QC.Lic:
     repos:
       code-repo.d4science.org/MaDgIK/uoa-repository-manager-ui licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-champagne-fly.sh
-        container: qc.lic_cranky-xanthic-chow
+        - /usr/bin/env sh .sqa/script.scaly-amber-frise.sh
+        container: qc.lic_tasty-periwinkle-woodpecker
   QC.Sty:
     repos:
       code-repo.d4science.org/MaDgIK/uoa-repository-manager-ui jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.bluesy-myrtle-rottweiler.sh
-        container: qc.sty_lumpy-persimmon-chinook
+        - /usr/bin/env sh .sqa/script.scanty-tan-whale.sh
+        container: qc.sty_randy-pink-mandrill
   QC.Ver:
     repos:
       code-repo.d4science.org/MaDgIK/uoa-repository-manager-ui get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-aquamarine-woodpecker.sh
-        container: qc.ver_crabby-zucchini-worm
+        - /usr/bin/env sh .sqa/script.greasy-lavender-swan.sh
+        container: qc.ver_slimy-denim-frise
 timeout: 5400
